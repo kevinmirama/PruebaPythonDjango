@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+
+WOOCOMMERCE_API_ROUTE = config("WOOCOMMERCE_API_ROUTE")
+WOOCOMMERCE_CLIENT_KEY = config("WOOCOMMERCE_CLIENT_KEY")
+WOOCOMMERCE_SECRET_KEY = config("WOCOMMERCE_SECRET_KEY")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -110,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
