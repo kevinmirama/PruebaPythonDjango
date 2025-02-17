@@ -1,4 +1,4 @@
-# utils/make_woocommerce_request.py
+# utils/make_woocommercse_request.py
 import requests
 import json
 import os
